@@ -1,0 +1,19 @@
+
+expenses = {
+    "Food": 150,
+    "Transport": 60,
+    "Entertainment": 200
+}
+
+total = sum(expenses.values())
+average = total / len(expenses)
+
+print("MY EXPENSE REPORT")
+print("-----------------")
+
+for category, amount in expenses.items():
+    print(f"{category}: ₹{amount}")
+
+print("-----------------")
+print(f"Total spending: ₹{total}")
+print(f"Average expense: ₹{average:.2f}")
